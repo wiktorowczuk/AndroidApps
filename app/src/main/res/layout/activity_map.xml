@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editLat"
+        android:hint="Wpisz szerokość geograficzną"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editLng"
+        android:hint="Wpisz długość geograficzną"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:text="Pokaż na mapie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
